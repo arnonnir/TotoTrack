@@ -2,7 +2,7 @@ app.factory('appSrv', ['$http', function ($http) {
     var service = {};
 
     service.sendParsedResult = function (data) {
-        return $http.get("http://52.17.193.160:8080/hackatonSever/jsonocr", {params: {json: data}});
+        return $http.get(appConfig.webServerUrl + "/jsonocr", {params: {json: data}});
     }
 
     return service;
@@ -60,9 +60,10 @@ app.controller('homePageCtrl', ['$scope','$http','appSrv', function($scope, $htt
         })
     };
 
-    $scope.stam =function(){
+    $scope.stam = function(){
         debugger;
         model.crop = jcrop_api.getSelection();
+
     }
 
 

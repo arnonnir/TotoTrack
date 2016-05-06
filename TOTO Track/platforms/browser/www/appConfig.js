@@ -1,0 +1,1 @@
+var appConfig = {webServerUrl: 'http://52.17.193.160:8080/hackatonSever'};

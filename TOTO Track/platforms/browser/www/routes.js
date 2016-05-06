@@ -1,7 +1,11 @@
 app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
     when('/', {
-        templateUrl: 'homePage/homePage.html',
-        controller: 'homePageCtrl'
+        templateUrl: 'pages/login/login.html',
+        controller: 'loginCtrl'
     })
+        .when('/homePage', {
+            templateUrl: 'pages/homePage/homePage.html',
+            controller: 'homePageCtrl'
+        })
 }]);
