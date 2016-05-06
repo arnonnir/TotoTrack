@@ -1,0 +1,9 @@
+<div>
+    <input type="file" class="upload" onchange="angular.element(this).scope().getFile(this.files)">
+    <button ng-click="uploadFile()">upload image</button>
+</div>
+
+<img ng-src="{{model.totoFormImg}}" width="300" height="300" ng-if="model.totoFormImg" id="target">
+
+
+<button ng-click="stam()">upload Crop</button>
